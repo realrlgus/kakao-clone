@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex</title>
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0px;
+    }
+    .grandfather {
+      background-color: #1e90ff;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .father {
+      width: 300px;
+      height: 300px;
+      background-color: #ff6b81;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .son {
+      width: 90px;
+      height: 90px;
+      background-color: #dad1d2;
+    }
+  </style>
+  <body>
+    <div class="grandfather">
+      <div class="father">
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+      </div>
+    </div>
+  </body>
+</html>
